@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Editar </h1>
+    <form action="/emp/updateemp" method="post">
+        <div class="form-control">
+            <input type="hidden" name="id_do_emprestimo" id="id_do_emprestimo" value="{{emp.id_do_emprestimo}}">
+            <br><br>
+            <label for="name">Nome:</label>
+            <input type="text" name="nome" placeholder="Digite o nome do cliente" value="{{emp.nome}}">
+            <br><br>
+            <label for="name">Valor do empréstimo:</label>
+            <input type="text" name="emprestimo" placeholder="Digite o valor do empréstimo"
+                value="{{emp.valor_emprestimo}}">
+            <br><br>
+            <label for="email">Parcelas:</label>
+            <input type="text" name="parcelas" placeholder="Digite quantas parcelas" value="{{emp.parcelas}}">
+            <br><br>
+            <label for="telefone">Juros:</label>
+            <input type="text" name="juros" placeholder="Juros" value="{{emp.juros}}">
+            <br><br>
+            <label for="endereco_cliente">Data:</label>
+            <input type="text" name="data" placeholder="Digite a data do empréstimo" value="{{emp.data}}">
+            <br><br>
+            <input type="submit" value="Editar">
+        </div>
+
+    </form>
+
+</body>
+
+</html>

@@ -1,0 +1,19 @@
+<h1> Cartões cadastrados</h1>
+
+<div class="prod-container">
+    {{#each listar}}
+
+    <strong> #{{this.iddocartao}}</strong> -
+    <a href="/cartao/{{this.iddocartao}}">{{coddeseg}}</a>
+    <br><br>
+    - Data de validade: {{dataexp}}
+    <br>
+    - Tipo do cartão: {{tipodecartao}}
+    <br>
+    - Limite: {{limitecartao}}
+    <br>
+    - Saldo: {{saldocartao}}
+    <br><br>
+    {{/each}}
+
+</div>

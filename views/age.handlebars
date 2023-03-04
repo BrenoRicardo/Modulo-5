@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Agência</h1>
+    <div class="prod-container">
+        {{#each listar}}
+
+        <strong> #{{this.id_da_agencia}}</strong> -
+        <a href="/age/{{this.id_da_agencia}}">Visualizar</a>
+        <br><br>
+        - Endereço: {{endereco}}
+        <br>
+        - Email: {{email}}
+        <br>
+        - Telefone: {{telefone}}
+        <br><br>
+        {{/each}}
+    </div>
+</body>
+
+</html>

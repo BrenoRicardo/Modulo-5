@@ -1,0 +1,26 @@
+<h1> Editar Clientes</h1>
+<hr>
+
+<form action="/cont/updatecont" method="post">
+    <div class="form-control">
+        <input type="hidden" name="id_da_conta" id="" value="{{cont.id_da_conta}}">
+        <br><br>
+        <label for="name">Nome:</label>
+        <input type="text" name="nome_cliente" placeholder="Digite o nome do cliente" value="{{cont.nome_cliente}}">
+        <br><br>
+        <label for="name">ID do cliente:</label>
+        <input type="text" name="id_do_cliente" placeholder="Digite o ID do cliente" value="{{cont.id_do_cliente}}">
+        <br><br>
+        <label for="email">Tipo de conta:</label>
+        <input type="text" name="tipo_de_conta" placeholder="Digite o tipo de conta" value="{{cont.tipo_de_conta}}">
+        <br><br>
+        <label for="telefone">Saldo da conta:</label>
+        <input type="text" name="saldo" placeholder="Digite o saldo da conta" value="{{cont.saldo}}">
+        <br><br>
+        <label for="id_da_agencia">ID da Agência:</label>
+        <input type="number" name="id_da_agencia" placeholder="Digite o ID da agência" value="{{cont.id_da_agencia}}">
+        <br><br>
+        <input type="submit" value="Editar">
+    </div>
+
+</form>

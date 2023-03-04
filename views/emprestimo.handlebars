@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Empréstimo</h1>
+    <h3>{{listarEmp.nome}}</h3>
+    <p>Empréstimo: {{listarEmp.valor_emprestimo}}</p>
+    <p>Parcelas: {{listarEmp.parcelas}}</p>
+    <p>Juros: {{listarEmp.juros}}</p>
+    <p>Data: {{listarEmp.data}}</p>
+
+
+
+    <a href="/emp/editE/{{listarEmp.id_do_emprestimo}}"> Editar</a>
+    <a href="/emp/remove/{{listarEmp.id_do_emprestimo}}"> Excluir</a>
+
+</body>
+
+</html>

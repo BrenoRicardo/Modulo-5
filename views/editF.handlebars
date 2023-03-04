@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Editar </h1>
+    <form action="/fun/updatefun" method="post">
+        <div class="form-control">
+            <input type="hidden" name="id_funcionario" id="id_funcionario" value="{{fun.id_funcionario}}">
+            <br><br>
+            <label for="name">Nome:</label>
+            <input type="text" name="nome" placeholder="Digite o nome do funcionário" value="{{fun.nome}}">
+            <br><br>
+            <label for="name">CPF:</label>
+            <input type="text" name="cpf" placeholder="Digite o cpf do funcionário" value="{{fun.cpf}}">
+            <br><br>
+            <label for="email">Email:</label>
+            <input type="text" name="email" placeholder="Digite o email do funcionário" value="{{fun.email}}">
+            <br><br>
+            <label for="email">Telefone:</label>
+            <input type="text" name="telefone" placeholder="Digite o telefone do funcionário" value="{{fun.telefone}}">
+            <br><br>
+            <label for="email">Cargo:</label>
+            <input type="text" name="cargo" placeholder="Digite o cargo do funcionário" value="{{fun.cargo}}">
+            <br><br>
+            <input type="submit" value="Editar">
+        </div>
+    </form>
+</body>
+
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Empréstimos</h1>
+    <div class="prod-container">
+        {{#each listar}}
+
+        <strong> #{{this.id_do_emprestimo}}</strong> -
+        <a href="/emp/{{this.id_do_emprestimo}}">{{nome}}</a>
+        <br><br>
+        - Valor do empréstimo: {{valor_emprestimo}}
+        <br>
+        - Parcelas: {{parcelas}}
+        <br>
+        - Juros: {{juros}}
+        <br>
+        - Data: {{data}}
+        <br><br>
+        {{/each}}
+    </div>
+</body>
+
+</html>

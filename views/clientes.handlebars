@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body style="background-color: blue;">
+    <h1>Cliente</h1>
+    <h3>{{listarProd.nome_cliente}}</h3>
+    <p>CPF: {{listarProd.cpf}}</p>
+    <p>Email: {{listarProd.email}}</p>
+    <p>Telefone: {{listarProd.telefone}}</p>
+    <p>Endereço: {{listarProd.endereco_cliente}}</p>
+    <p>ID do Empéstimo: {{listarProd.id_do_emprestimo}}</p>
+    <p>ID do Cartão: {{listarProd.id_do_cartao}}</p>
+    <p>ID da Agência: {{listarProd.id_da_agencia}}</p>
+
+
+    <a href="/prod/edit/{{listarProd.id_do_cliente}}"> Editar</a>
+    <a href="/prod/remove/{{listarProd.id_do_cliente}}"> Excluir</a>
+
+
+
+</body>
+
+</html>

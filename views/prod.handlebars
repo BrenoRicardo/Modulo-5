@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/publico/css/prod.css">
+</head>
+
+<body>
+    <h1>Cadastros</h1>
+    <div class="prod-container">
+        {{#each listar}}
+
+        <strong> #{{this.id_do_cliente}}</strong> -
+        <a href="/prod/{{this.id_do_cliente}}">{{nome_cliente}}</a>
+        <br><br>
+        - CPF: {{cpf}}
+        <br>
+        - Email: {{email}}
+        <br>
+        - Telefone: {{telefone}}
+        <br>
+        - Endereço: {{endereco_cliente}}
+        <br>
+        - ID do Empréstimo: {{id_do_emprestimo}}
+        <br>
+        - ID do Cartão: {{id_do_cartao}}
+        <br>
+        - ID da Agência: {{id_da_agencia}}
+        <br><br>
+        {{/each}}
+    </div>
+
+
+</body>
+
+</html>

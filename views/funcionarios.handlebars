@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Funcionários</h1>
+    <h3>{{listarFun.nome}}</h3>
+    <p>CPF: {{listarFun.cpf}}</p>
+    <p>Email: {{listarFun.email}}</p>
+    <p>Telefone: {{listarFun.telefone}}</p>
+    <p>Cargo: {{listarFun.cargo}}</p>
+
+    <a href="/fun/editF/{{listarFun.id_funcionario}}"> Editar</a>
+    <a href="/fun/remove/{{listarFun.id_funcionario}}"> Excluir</a>
+</body>
+
+</html>

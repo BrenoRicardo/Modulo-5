@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body >
+    <h1>Editar cliente</h1>
+    <form action="/prod/updateprod" method="post">
+        <div class="form-control">
+            <input type="hidden" name="id_do_cliente" id="id_do_cliente" value="{{prod.id_do_cliente}}">
+            <br><br>
+            <label for="name">Nome:</label>
+            <input type="text" name="nome_cliente" placeholder="Digite o nome do cliente" value="{{prod.nome_cliente}}">
+            <br><br>
+            <label for="name">CPF:</label>
+            <input type="text" name="cpf" placeholder="Digite o cpf do cliente" value="{{prod.cpf}}">
+            <br><br>
+            <label for="email">Email:</label>
+            <input type="text" name="email" placeholder="Digite o email do cliente" value="{{prod.email}}">
+            <br><br>
+            <label for="telefone">Telefone:</label>
+            <input type="text" name="telefone" placeholder="Digite o telefone do cliente" value="{{prod.telefone}}">
+            <br><br>
+            <label for="endereco_cliente">Endereço:</label>
+            <input type="text" name="endereco_cliente" placeholder="Digite o endereço do cliente"
+                value="{{prod.endereco_cliente}}">
+            <br><br>
+            <label for="id_do_emprestimo">ID do Empréstimo:</label>
+            <input type="number" name="id_do_emprestimo" placeholder="Digite o id do empréstimo"
+                value="{{prod.id_do_emprestimo}}">
+            <br><br>
+            <label for="id_do_cartao">ID do Cartão:</label>
+            <input type="number" name="id_do_cartao" placeholder="Digite o id do cartão" value="{{prod.id_do_cartao}}">
+            <br><br>
+            <label for="id_da_agencia">ID da Agência:</label>
+            <input type="number" name="id_da_agencia" placeholder="Digite a sua agência" value="{{prod.id_da_agencia}}">
+            <br><br>
+            <input type="submit" value="Editar">
+        </div>
+
+    </form>
+
+
+
+
+
+
+</body>
+
+</html>

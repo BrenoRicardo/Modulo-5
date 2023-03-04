@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Contas</h1>
+    <div class="prod-container">
+        {{#each listar}}
+
+        <strong> #{{this.id_da_conta}}</strong> -
+        <a href="/cont/{{this.id_da_conta}}"> Titular: {{nome_cliente}}</a>
+        <br><br>
+        - Id do cliente: {{id_do_cliente}}
+        <br>
+        - Tipo de conta: {{tipo_de_conta}}
+        <br>
+        - Saldo: {{saldo}}
+        <br>
+        - Id da agência: {{id_da_agencia}}
+        <br><br>
+        {{/each}}
+    </div>
+</body>
+
+</html>
